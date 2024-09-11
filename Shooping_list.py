@@ -29,9 +29,12 @@ while True:
                 option_delete = (input('What do you delete?: \n'))
                 if option_delete in shooping:
                     shooping.remove(option_delete)
+                
+                else:
+                    print("This item isn't in the shooping list.")
             elif len(shooping) < 1:
                 print("You don't have products.")
-        except IndexError:
+        except ValueError:
             print('Invalid value')
             
     

@@ -15,7 +15,7 @@ while True:
         password = input('Typed your password: \n')
         if len(password) != 8:
             os.system('cls')
-            print('Typed a password with 8 or less characters.')
+            print('Typed a password with 8 characters.')
         elif len(password) == 8:
             print('Your password:', password)
             break
